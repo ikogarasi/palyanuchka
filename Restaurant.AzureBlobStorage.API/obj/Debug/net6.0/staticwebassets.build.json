@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ciAFzsnswXjnz1PGYyI7AquQA+qod0uvv5f8yuzfnx8=",
+  "Source": "Restaurant.Services.AzureBlobStorageAPI",
+  "BasePath": "_content/Restaurant.Services.AzureBlobStorageAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

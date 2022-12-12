@@ -11,6 +11,9 @@
         <div class="col">
             <h1 class="text-info">Products list</h1>
         </div>
+        <div class="col text-end">
+            <a class="btn btn-outline-primary mt-1" asp-action="Upsert">Create new product</a>
+        </div>
         <hr />
         <div class="col">
             <table class="table table-borderless table-striped">
@@ -30,8 +33,13 @@
                         <td>@each.CategoryName</td>
                         <td>@each.Price</td>
                         <td>
-                            <div class="btn-group">
-                                <a class="btn btn-primary"></a>
+                            <div class="col">
+                                <a class="btn btn-primary" asp-action="Upsert" asp-route-id="@each.ProductId">
+                                    Edit
+                                </a>
+                                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@each.ProductId">
+                                    Delete
+                                </a>
                             </div>
                         </td>
                     </tr>

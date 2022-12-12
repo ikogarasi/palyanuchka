@@ -1,0 +1,63 @@
+﻿@model ProductDto
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<input asp-for="ProductId" hidden />
+<input asp-for="ImageURL" hidden />
+
+<br /><br />
+<form>
+    <div class="row">
+        <div class="col">
+            <div class="border p-3 mt-4 row">
+                <div class="row pb-2">
+                    <h2 class="text-info">@(Model.ProductId == 0 ? "Create" : "Update") product</h2>
+                </div>
+                <hr />
+                <div class="row pb-3">
+                    <div class="col-6 mb-2">
+                        <label class="text-dark" asp-for="ProductName">Name</label>
+                        <input type="text" class="form-control" asp-for="ProductName" />
+                        <span asp-validation-for="ProductName" class="text-danger"></span>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <label class="text-dark" asp-for="CategoryName">Category</label>
+                        <input type="text" class="form-control" asp-for="CategoryName" />
+                        <span asp-validation-for="CategoryName" class="text-danger"></span>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <label class="text-dark" asp-for="Price">Price</label>
+                        <input type="text" class="form-control" asp-for="Price" />
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                    <div class="mb-2">
+                        <label class="text-dark" asp-for="ProductDescription">Description</label>
+                        <textarea class="form-control" asp-for="ProductDescription" rows="3"></textarea>
+                        <span asp-validation-for="ProductDescription" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="text-dark" asp-for="ImageURL">Image URL</label>
+                        <input type="file" name="file" class="form-control" asp-for="ImageURL" />
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" onclick="return ValidateInput()" class="btn btn-primary">
+                            @(Model.ProductId == 0 ? "Create" : "Update")
+                        </button>
+                        <a asp-action="Index" class="btn btn-secondary">
+                            Back to list
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @if (Model.ImageURL != null)
+        {
+            <div class="col-2 pt-4">
+                <img src="@Model.ImageURL" style="width:100%; border:1px solid #e9ecef; border-radius:5px" />
+            </div>
+        }
+    </div>
+</form>
