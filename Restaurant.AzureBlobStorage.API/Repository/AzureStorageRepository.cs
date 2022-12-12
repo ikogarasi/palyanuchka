@@ -18,7 +18,7 @@ namespace Restaurant.Services.AzureBlobStorageAPI.Repository
         }
 
         #endregion
-        public async Task<BlobResponseDto> UploadAsync(IFormFile file, string folderName)
+        public async Task<BlobResponseDto> UploadAsync(IFormFile file, string folderName="")
         {
             BlobResponseDto response = new();
 
@@ -29,6 +29,7 @@ namespace Restaurant.Services.AzureBlobStorageAPI.Repository
                     client = _blobContainerClient.GetBlobClient(file.FileName);
                 else
                     client = _blobContainerClient.GetBlobClient($"{folderName}/{file.FileName}");
+
                 await using (Stream data = file.OpenReadStream())
                 {
                     await client.UploadAsync(data);
@@ -36,8 +37,11 @@ namespace Restaurant.Services.AzureBlobStorageAPI.Repository
 
                 response.DisplayMessage = $"File {file.FileName} Uploaded";
                 response.IsSuccess = true;
-                (response.Result as BlobDto).Uri = client.Uri.AbsoluteUri;
-                (response.Result as BlobDto).Name = client.Name;
+                response.Result = new()
+                {
+                    Uri = client.Uri.AbsoluteUri,
+                    Name = client.Name
+                };
 
             }
             catch (RequestFailedException ex)

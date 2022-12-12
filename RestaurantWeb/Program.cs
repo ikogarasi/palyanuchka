@@ -7,7 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient<IProductService, ProductService>();
 RestaurantWeb.SD.ProductAPIBase = builder.Configuration["ServiceUrls:ProductAPI"];
+RestaurantWeb.SD.AzureBlobAPIBase = builder.Configuration["ServiceUrls:AzureBlobAPI"];
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IAzureStorageService, AzureStorageService>();
 
 
 var app = builder.Build();
