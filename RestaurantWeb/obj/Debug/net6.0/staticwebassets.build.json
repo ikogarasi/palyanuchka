@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9fV/su1yamJ+qI5X3EZqPwPB5CFmwFkE3kZtQEVD4CY=",
+  "Hash": "q6nQhxrss0EIRhI/TY0YzfXqWIHN2iGinn86eir9d4Q=",
   "Source": "RestaurantWeb",
   "BasePath": "_content/RestaurantWeb",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\vital\\source\\repos\\Restaurant\\RestaurantWeb\\wwwroot\\js\\product.js",
+      "SourceId": "RestaurantWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vital\\source\\repos\\Restaurant\\RestaurantWeb\\wwwroot\\",
+      "BasePath": "_content/RestaurantWeb",
+      "RelativePath": "js/product.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\product.js"
     },
     {
       "Identity": "C:\\Users\\vital\\source\\repos\\Restaurant\\RestaurantWeb\\wwwroot\\js\\site.js",

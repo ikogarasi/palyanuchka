@@ -1,4 +1,4 @@
-﻿namespace Restaurant.Services.AzureBlobStorageAPI.Models
+﻿namespace RestaurantWeb.Models
 {
     public class BlobDto
     {

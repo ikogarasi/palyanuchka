@@ -12,7 +12,7 @@
             <h1 class="text-info">Products list</h1>
         </div>
         <div class="col text-end">
-            <a class="btn btn-outline-primary mt-1" asp-action="Upsert">Create new product</a>
+            <a class="btn btn-outline-primary mt-1" asp-action="Upsert"><i class="fa-regular fa-plus"></i> Create new product</a>
         </div>
         <hr />
         <div class="col">
@@ -35,10 +35,10 @@
                         <td>
                             <div class="col">
                                 <a class="btn btn-primary" asp-action="Upsert" asp-route-id="@each.ProductId">
-                                    Edit
+                                    <i class="fa-regular fa-pen-to-square"></i>
                                 </a>
-                                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@each.ProductId">
-                                    Delete
+                                <a class="btn btn-danger" onclick="deleteProduct(@each.ProductId)">
+                                    <i class="fa-regular fa-trash-can"></i>
                                 </a>
                             </div>
                         </td>
@@ -49,3 +49,8 @@
         </div>
     </div>
 </div>
+
+@section Scripts
+{
+    <script src="~/js/product.js" type="text/javascript"></script>
+}
