@@ -11,7 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{65
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant.Sevices.ProductAPI", "Restaurant.Sevices.ProductAPI\Restaurant.Sevices.ProductAPI.csproj", "{85485FCE-C39E-4A5F-AB4A-E15CC1B03CCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant.Services.AzureBlobStorageAPI", "Restaurant.AzureBlobStorage.API\Restaurant.Services.AzureBlobStorageAPI.csproj", "{9297B022-C410-4B10-985F-9A4F1E631345}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant.Services.AzureBlobStorageAPI", "Restaurant.AzureBlobStorage.API\Restaurant.Services.AzureBlobStorageAPI.csproj", "{9297B022-C410-4B10-985F-9A4F1E631345}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant.Services.Identity", "Restaurant.Services.Identity\Restaurant.Services.Identity.csproj", "{868682AE-C49D-42A3-A393-C9579E68532A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{9297B022-C410-4B10-985F-9A4F1E631345}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9297B022-C410-4B10-985F-9A4F1E631345}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9297B022-C410-4B10-985F-9A4F1E631345}.Release|Any CPU.Build.0 = Release|Any CPU
+		{868682AE-C49D-42A3-A393-C9579E68532A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{868682AE-C49D-42A3-A393-C9579E68532A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{868682AE-C49D-42A3-A393-C9579E68532A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{868682AE-C49D-42A3-A393-C9579E68532A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{F7D2FE31-AA09-4053-AF35-E2549B406799} = {76C54672-441E-43BA-856F-C11598681C96}
 		{85485FCE-C39E-4A5F-AB4A-E15CC1B03CCB} = {65E6BBF3-1987-4759-9C24-2CD9A6B34E5B}
 		{9297B022-C410-4B10-985F-9A4F1E631345} = {65E6BBF3-1987-4759-9C24-2CD9A6B34E5B}
+		{868682AE-C49D-42A3-A393-C9579E68532A} = {65E6BBF3-1987-4759-9C24-2CD9A6B34E5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {39FCA7B8-9B44-4140-BBB3-7F914554A2C5}
