@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Restaurant.Sevices.ProductAPI.Models.Dto;
 using Restaurant.Sevices.ProductAPI.Models.Dtos;
 using Restaurant.Sevices.ProductAPI.Repository.IRepository;
@@ -18,6 +19,7 @@ namespace Restaurant.Sevices.ProductAPI.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<object> Get()
         {
             try
@@ -34,6 +36,7 @@ namespace Restaurant.Sevices.ProductAPI.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         [Route("{id}")]
         public async Task<object> Get(int id)
         {
@@ -51,6 +54,7 @@ namespace Restaurant.Sevices.ProductAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<object> Post([FromBody] ProductDto productDto)
         {
             try
@@ -67,6 +71,7 @@ namespace Restaurant.Sevices.ProductAPI.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public async Task<object> Put([FromBody] ProductDto productDto)
         {
             try
@@ -83,6 +88,7 @@ namespace Restaurant.Sevices.ProductAPI.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = "Admin")]
         public async Task<object> Delete(int id)
         {
             try

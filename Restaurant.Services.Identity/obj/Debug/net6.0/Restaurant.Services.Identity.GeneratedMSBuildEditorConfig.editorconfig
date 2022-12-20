@@ -15,108 +15,108 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\vital\source\repos\Restaurant\Restaurant.Services.Identity
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Account/AccessDenied.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXEFjY291bnRcQWNjZXNzRGVuaWVkLmNzaHRtbA==
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Account/Login/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXEFjY291bnRcTG9naW5cSW5kZXguY3NodG1s
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Account/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Account/Logout/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXEFjY291bnRcTG9nb3V0XEluZGV4LmNzaHRtbA==
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Account/Logout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Account/Logout/LoggedOut.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXEFjY291bnRcTG9nb3V0XExvZ2dlZE91dC5jc2h0bWw=
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Account/Logout/LoggedOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXRcTG9nZ2VkT3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Ciba/All.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXENpYmFcQWxsLmNzaHRtbA==
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Ciba/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2liYVxBbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Ciba/Consent.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXENpYmFcQ29uc2VudC5jc2h0bWw=
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Ciba/Consent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2liYVxDb25zZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Ciba/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXENpYmFcSW5kZXguY3NodG1s
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Ciba/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2liYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Ciba/_ScopeListItem.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXENpYmFcX1Njb3BlTGlzdEl0ZW0uY3NodG1s
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Ciba/_ScopeListItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2liYVxfU2NvcGVMaXN0SXRlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Consent/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXENvbnNlbnRcSW5kZXguY3NodG1s
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Consent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc2VudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Consent/_ScopeListItem.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXENvbnNlbnRcX1Njb3BlTGlzdEl0ZW0uY3NodG1s
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Consent/_ScopeListItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc2VudFxfU2NvcGVMaXN0SXRlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Device/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXERldmljZVxJbmRleC5jc2h0bWw=
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Device/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV2aWNlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Device/Success.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXERldmljZVxTdWNjZXNzLmNzaHRtbA==
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Device/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV2aWNlXFN1Y2Nlc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Device/_ScopeListItem.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXERldmljZVxfU2NvcGVMaXN0SXRlbS5jc2h0bWw=
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Device/_ScopeListItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV2aWNlXF9TY29wZUxpc3RJdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Diagnostics/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXERpYWdub3N0aWNzXEluZGV4LmNzaHRtbA==
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Diagnostics/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhZ25vc3RpY3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/ExternalLogin/Callback.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXEV4dGVybmFsTG9naW5cQ2FsbGJhY2suY3NodG1s
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/ExternalLogin/Callback.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZXJuYWxMb2dpblxDYWxsYmFjay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/ExternalLogin/Challenge.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXEV4dGVybmFsTG9naW5cQ2hhbGxlbmdlLmNzaHRtbA==
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/ExternalLogin/Challenge.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZXJuYWxMb2dpblxDaGFsbGVuZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Grants/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXEdyYW50c1xJbmRleC5jc2h0bWw=
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Grants/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Home/Error/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXEhvbWVcRXJyb3JcSW5kZXguY3NodG1s
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Home/Error/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxFcnJvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXEluZGV4LmNzaHRtbA==
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Redirect/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXFJlZGlyZWN0XEluZGV4LmNzaHRtbA==
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Redirect/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVkaXJlY3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/ServerSideSessions/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXFNlcnZlclNpZGVTZXNzaW9uc1xJbmRleC5jc2h0bWw=
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/ServerSideSessions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmVyU2lkZVNlc3Npb25zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Shared/_Nav.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXFNoYXJlZFxfTmF2LmNzaHRtbA==
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Shared/_Nav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9OYXYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/Shared/_ValidationSummary.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXFNoYXJlZFxfVmFsaWRhdGlvblN1bW1hcnkuY3NodG1s
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/Shared/_ValidationSummary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU3VtbWFyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Models/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = TW9kZWxzXFBhZ2VzXF9WaWV3U3RhcnQuY3NodG1s
+[C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/vital/source/repos/Restaurant/Restaurant.Services.Identity/Views/Home/Index.cshtml]
