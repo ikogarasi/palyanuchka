@@ -20,7 +20,7 @@ namespace Restaurant.Services.Identity.Pages.Account.Register
         [Display(Name = "Confirm password")]
         public string ConfirmPassword { get; set; }
         
-        public string ReturnUl { get; set; }
+        public string ReturnUrl { get; set; }
         public string RoleName { get; set; } = "User";
     }
 }

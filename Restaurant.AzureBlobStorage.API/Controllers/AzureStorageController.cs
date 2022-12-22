@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Restaurant.Services.AzureBlobStorageAPI.Models;
 using Restaurant.Services.AzureBlobStorageAPI.Repository.IRepository;
 
 namespace Restaurant.Services.AzureBlobStorageAPI.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class AzureStorageController : Controller
