@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant.Sevices.ProductA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant.Services.AzureBlobStorageAPI", "Restaurant.AzureBlobStorage.API\Restaurant.Services.AzureBlobStorageAPI.csproj", "{9297B022-C410-4B10-985F-9A4F1E631345}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant.Services.Identity", "Restaurant.Services.Identity\Restaurant.Services.Identity.csproj", "{868682AE-C49D-42A3-A393-C9579E68532A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant.Services.Identity", "Restaurant.Services.Identity\Restaurant.Services.Identity.csproj", "{868682AE-C49D-42A3-A393-C9579E68532A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

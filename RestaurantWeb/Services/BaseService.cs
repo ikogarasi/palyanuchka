@@ -49,6 +49,11 @@ namespace RestaurantWeb.Services
                             Encoding.UTF8, "application/json");
                 }
 
+                if (!string.IsNullOrEmpty(apiRequest.AccessToken))
+                {
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiRequest.AccessToken);
+                }
+
                 HttpResponseMessage apiResponse = null;
                 switch (apiRequest.ApiType)
                 {
@@ -85,16 +90,6 @@ namespace RestaurantWeb.Services
                 return apiResponseDto;
             }
         }
-
-        /*public async Task<T> SendDataAsync<T>(ApiRequest apiRequest)
-        {
-            var client = httpClient.CreateClient("RestaurantAPI");
-            HttpRequestMessage request = new HttpRequestMessage();
-            request.Headers.Add("Accept", "application/json");
-            request.RequestUri = new Uri(apiRequest.Url);
-            client.DefaultRequestHeaders.Clear();
-            { }
-        }*/
 
         public void Dispose()
         {

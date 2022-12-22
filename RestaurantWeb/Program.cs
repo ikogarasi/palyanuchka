@@ -39,7 +39,8 @@ builder.Services.AddAuthentication(options =>
         options.Scope.Add("palyanuchka");
         options.SaveTokens = true;
 
-       /* options.ClaimActions.MapJsonKey("role", "role");
+        options.ClaimActions.MapJsonKey("role", "role", "role");
+        options.ClaimActions.MapJsonKey("sub", "sub", "sub");
 
         options.Events = new OpenIdConnectEvents
         {
@@ -49,7 +50,7 @@ builder.Services.AddAuthentication(options =>
                 context.HandleResponse();
                 return Task.FromResult(0);
             }
-        };*/
+        };
     });
 
 builder.Services.AddSession(options =>

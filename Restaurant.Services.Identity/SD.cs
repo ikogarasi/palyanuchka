@@ -1,5 +1,6 @@
 ﻿using Duende.IdentityServer;
 using Duende.IdentityServer.Models;
+using IdentityModel;
 
 namespace Restaurant.Services.Identity
 {
@@ -44,7 +45,7 @@ namespace Restaurant.Services.Identity
                         IdentityServerConstants.StandardScopes.OpenId, 
                         IdentityServerConstants.StandardScopes.Profile, 
                         IdentityServerConstants.StandardScopes.Email,
-                        "palyanuchka"
+                        JwtClaimTypes.Role
                     },
                     RedirectUris = { "https://localhost:44350/signin-oidc" },
                     PostLogoutRedirectUris = { "https://localhost:44350/signout-callback-oidc" },

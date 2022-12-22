@@ -1,3 +1,4 @@
+using Duende.IdentityServer.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Restaurant.Services.Identity;
@@ -29,8 +30,10 @@ builder.Services.AddIdentityServer(options =>
 .AddInMemoryApiScopes(SD.ApiScopes)
 .AddInMemoryClients(SD.Clients)
 .AddAspNetIdentity<ApplicationUser>()
-.AddDeveloperSigningCredential();
+.AddDeveloperSigningCredential()
+.AddProfileService<ProfileService>();
 
+builder.Services.AddScoped<IProfileService, ProfileService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -50,7 +53,7 @@ app.UseIdentityServer();
 //app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapRazorPages().RequireAuthorization();
+app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using RestaurantWeb.Models;
 using RestaurantWeb.Services.IServices;
@@ -7,6 +9,7 @@ using System.Text;
 namespace RestaurantWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class ProductController : Controller
     {
         #region Dependecy Injection / Constructor
@@ -21,7 +24,6 @@ namespace RestaurantWeb.Areas.Admin.Controllers
         }
 
         #endregion
-
         public async Task<IActionResult> Index()
         {
             List<ProductDto> list = new();
@@ -36,6 +38,7 @@ namespace RestaurantWeb.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Upsert(int id = 0)
         {
+
             if (id == 0)
                 return View(new ProductDto());
 
@@ -52,6 +55,7 @@ namespace RestaurantWeb.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> UpsertPOST(ProductDto dto, IFormFile file = null)
         {
+            var accessToken = await HttpContext.GetTokenAsync("access_token");
             ResponseDto uploadResponse = null;
             ResponseDto response = new();
 
@@ -85,11 +89,11 @@ namespace RestaurantWeb.Areas.Admin.Controllers
 
             if (dto.ProductId == 0)
             {
-                response = await _productService.CreateProductAsync<ResponseDto>(dto);
+                response = await _productService.CreateProductAsync<ResponseDto>(dto, accessToken);
             }
             else
             {
-                response = await _productService.UpdateProductAsync<ResponseDto>(dto);
+                response = await _productService.UpdateProductAsync<ResponseDto>(dto, accessToken);
             }
 
             return RedirectToAction("Index");
@@ -100,6 +104,8 @@ namespace RestaurantWeb.Areas.Admin.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
+            var accessToken = await HttpContext.GetTokenAsync("access_token");
+
             ResponseDto response = await _productService.GetProductByIdAsync<ResponseDto>(id);
             ProductDto product;
 
@@ -108,7 +114,7 @@ namespace RestaurantWeb.Areas.Admin.Controllers
                 product = JsonConvert.DeserializeObject<ProductDto>(response.Result.ToString());
                 response = await _azureStorageService.DeleteAsync<ResponseDto>(
                     product.ImageURL.Replace(_azureStorageService.ContainerUrlString+"/", ""));
-                response = await _productService.DeleteProductAsync<ResponseDto>(product.ProductId);
+                response = await _productService.DeleteProductAsync<ResponseDto>(product.ProductId, accessToken);
                 return Json(new { IsSuccess = true });
             }
 

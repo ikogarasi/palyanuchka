@@ -105,7 +105,8 @@ public class Index : PageModel
             // validate username/password against in-memory store
             if (result.Succeeded)
             {
-                var user = _db.ApplicationUsers.FirstOrDefault(u => u.UserName.Equals(Input.Username, StringComparison.OrdinalIgnoreCase));
+                var user = _db.ApplicationUsers.FirstOrDefault(u => Input.Username.ToLower() == u.UserName.ToLower());
+                //u => String.Equals(Input.Username, u.UserName, StringComparison.OrdinalIgnoreCase)
                 await _events.RaiseAsync(new UserLoginSuccessEvent(user.UserName, user.Id, user.UserName, clientId: context?.Client.ClientId));
 
                 // only set explicit expiration here if user chooses "remember me". 
