@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Restaurant.Sevices.ProductAPI.Models.Dto;
-using Restaurant.Sevices.ProductAPI.Models.Dtos;
-using Restaurant.Sevices.ProductAPI.Repository.IRepository;
+using Restaurant.Services.ProductAPI.Models.Dto;
+using Restaurant.Services.ProductAPI.Models.Dtos;
+using Restaurant.Services.ProductAPI.Repository.IRepository;
 
-namespace Restaurant.Sevices.ProductAPI.Controllers
+namespace Restaurant.Services.ProductAPI.Controllers
 {
     [Route("api/products")]
     public class ProductAPIController : Controller

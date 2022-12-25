@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Restaurant.Sevices.ProductAPI.Models.Dto;
-using Restaurant.Sevices.ProductAPI.Models.Dtos;
+using Restaurant.Services.ProductAPI.Models.Dto;
+using Restaurant.Services.ProductAPI.Models.Dtos;
 
-namespace Restaurant.Sevices.ProductAPI
+namespace Restaurant.Services.ProductAPI
 {
     public class MappingConfig
     {
@@ -10,8 +10,7 @@ namespace Restaurant.Sevices.ProductAPI
         {
             var mappingConfig = new MapperConfiguration(config =>
             {
-                config.CreateMap<ProductDto, Product>();
-                config.CreateMap<Product, ProductDto>();
+                config.CreateMap<ProductDto, Product>().ReverseMap;
             });
 
             return mappingConfig;

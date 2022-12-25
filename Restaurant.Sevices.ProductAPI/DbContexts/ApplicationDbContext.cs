@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Restaurant.Sevices.ProductAPI.Models.Dto;
+using Restaurant.Services.ProductAPI.Models.Dto;
 
-namespace Restaurant.Sevices.ProductAPI.DbContexts
+namespace Restaurant.Services.ProductAPI.DbContexts
 {
     public class ApplicationDbContext : DbContext
     {

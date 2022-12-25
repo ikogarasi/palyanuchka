@@ -2,10 +2,10 @@ using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Restaurant.Sevices.ProductAPI;
-using Restaurant.Sevices.ProductAPI.DbContexts;
-using Restaurant.Sevices.ProductAPI.Repository;
-using Restaurant.Sevices.ProductAPI.Repository.IRepository;
+using Restaurant.Services.ProductAPI;
+using Restaurant.Services.ProductAPI.DbContexts;
+using Restaurant.Services.ProductAPI.Repository;
+using Restaurant.Services.ProductAPI.Repository.IRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 

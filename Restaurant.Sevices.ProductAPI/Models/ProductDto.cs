@@ -1,4 +1,4 @@
-﻿namespace Restaurant.Sevices.ProductAPI.Models.Dtos
+﻿namespace Restaurant.Services.ProductAPI.Models.Dtos
 {
     public class ProductDto
     {

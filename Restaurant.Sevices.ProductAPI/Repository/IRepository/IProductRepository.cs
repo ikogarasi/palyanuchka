@@ -1,6 +1,6 @@
-﻿using Restaurant.Sevices.ProductAPI.Models.Dtos;
+﻿using Restaurant.Services.ProductAPI.Models.Dtos;
 
-namespace Restaurant.Sevices.ProductAPI.Repository.IRepository
+namespace Restaurant.Services.ProductAPI.Repository.IRepository
 {
     public interface IProductRepository
     {

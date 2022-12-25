@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using Restaurant.Sevices.ProductAPI.DbContexts;
-using Restaurant.Sevices.ProductAPI.Models.Dto;
-using Restaurant.Sevices.ProductAPI.Models.Dtos;
-using Restaurant.Sevices.ProductAPI.Repository.IRepository;
+using Restaurant.Services.ProductAPI.DbContexts;
+using Restaurant.Services.ProductAPI.Models.Dto;
+using Restaurant.Services.ProductAPI.Models.Dtos;
+using Restaurant.Services.ProductAPI.Repository.IRepository;
 
-namespace Restaurant.Sevices.ProductAPI.Repository
+namespace Restaurant.Services.ProductAPI.Repository
 {
     public class ProductRepository : IProductRepository
     {

@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Restaurant.Sevices.ProductAPI.DbContexts;
+using Restaurant.Services.ProductAPI.DbContexts;
 
 #nullable disable
 
-namespace Restaurant.Sevices.ProductAPI.Migrations
+namespace Restaurant.Services.ProductAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot

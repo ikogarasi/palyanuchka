@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Restaurant.Sevices.ProductAPI.Migrations
+namespace Restaurant.Services.ProductAPI.Migrations
 {
     public partial class addDishesToDb : Migration
     {

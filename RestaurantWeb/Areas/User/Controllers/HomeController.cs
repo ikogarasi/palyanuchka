@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using RestaurantWeb.Models;
+using RestaurantWeb.Services.IServices;
 using System.Diagnostics;
 
 namespace RestaurantWeb.Areas.User.Controllers
@@ -9,15 +11,30 @@ namespace RestaurantWeb.Areas.User.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IProductService _productService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IProductService productService)
         {
             _logger = logger;
+            _productService = productService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var response = await _productService.GetAllProductsAsync<ResponseDto>();
+
+            List<ProductDto> products = JsonConvert.DeserializeObject<List<ProductDto>>(Convert.ToString(response.Result));
+
+            return View(products);
+        }
+
+        public async Task<IActionResult> Details(int id)
+        {
+            var response = await _productService.GetProductByIdAsync<ResponseDto>(id);
+
+            ProductDto product = JsonConvert.DeserializeObject<ProductDto>(Convert.ToString(response.Result));
+
+            return View(product);
         }
 
         public IActionResult Privacy()
