@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="~/RestaurantWeb.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <partial name="_AdminHeader" />
+    @if (User.IsInRole("Admin"))
+    {
+        <partial name="_AdminHeader" />
+    }
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -21,10 +24,28 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-light" asp-area="User" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-light" asp-area="User" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link text-light dropdown-toggle">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                            <div class="dropdown-menu" style="width: 400px">
+                                <div class="container" id="dropdown_container">
+                                    <!--cart data here-->
+                                </div>
+                                <hr class="dropdown-divivder"/>
+                                <div class="container">
+                                    <div class="col">
+                                        <a class="btn btn-outline-primary" asp-area="User" asp-controller="Cart" asp-action="Index">
+                                            <i class="fa-solid fa-circle-info"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -48,6 +69,45 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript">
+        $(function() {
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("GetCartDetails", "Cart")',
+                success: function(response) {
+                    for (i = 0; i < response["data"].length; ++i) {
+                        var imageUrl = response["data"][i]["product"]["imageURL"];
+                        var productName = response["data"][i]["product"]["productName"];
+                        var count = response["data"][i]["count"];
+                        var price = response["data"][i]["product"]["price"]
+                            .toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+                        var productContent = `
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="${imageUrl}" style="width:100%" />
+                                </div>
+                                <div class="col-8">
+                                    <div class="row">
+                                        <h5 class="text-primary">${productName}</h5>            
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="text-secondary">Count: ${count}</p>
+                                        </div>
+                                        <div class="col">
+                                            <p class="text-black text-end">${price}</p>
+                                        </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        $('#dropdown_container').append(productContent);
+                    }
+                }
+            });
+        })
+        </script>
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>

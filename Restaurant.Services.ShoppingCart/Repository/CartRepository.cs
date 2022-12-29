@@ -73,6 +73,8 @@ namespace Restaurant.Services.ShoppingCartAPI.Repository
                 {
                     cart.CartDetails.FirstOrDefault().Product = null;
                     cart.CartDetails.FirstOrDefault().Count += cartDetailsFromDb.Count;
+                    cart.CartDetails.FirstOrDefault().CartDetailsId = cartDetailsFromDb.CartDetailsId;
+                    cart.CartDetails.FirstOrDefault().CartHeaderId = cartDetailsFromDb.CartHeaderId;
                     _db.CartDetails.Update(cart.CartDetails.FirstOrDefault());
                     await _db.SaveChangesAsync();
                 }
@@ -90,7 +92,7 @@ namespace Restaurant.Services.ShoppingCartAPI.Repository
             };
 
             cart.CartDetails = _db.CartDetails
-                .Where(i => i.CartDetailsId == cart.CartHeader.CartHeaderId).Include(i => i.Product);
+                .Where(i => i.CartHeaderId == cart.CartHeader.CartHeaderId).Include(i => i.Product);
 
             return _mapper.Map<CartDto>(cart);
         }

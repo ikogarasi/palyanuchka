@@ -13,8 +13,10 @@ builder.Services.AddHttpClient<IProductService, ProductService>();
 RestaurantWeb.SD.ProductAPIBase = builder.Configuration["ServiceUrls:ProductAPI"];
 RestaurantWeb.SD.AzureBlobAPIBase = builder.Configuration["ServiceUrls:AzureBlobAPI"];
 RestaurantWeb.SD.IdentityAPIBase = builder.Configuration["ServiceUrls:IdentityAPI"];
+RestaurantWeb.SD.ShoppingCartAPIBase = builder.Configuration["ServiceUrls:ShoppingCartAPI"];
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IAzureStorageService, AzureStorageService>();
+builder.Services.AddScoped<IShoppingCartService, ShoppingCartService>();
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;

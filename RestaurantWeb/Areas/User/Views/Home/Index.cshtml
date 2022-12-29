@@ -4,34 +4,41 @@
 }
 
 <div class="container row">
-@foreach (var _ in Model)
-{
-    <div class="col-4">
-        <div class="card border-1 m-2">
-            <div class="card-body">
-                <div>
-                    <img class="card-img-top" src="@_.ImageURL">
-                </div>
-                <div>
-                    <h4 class="text-primary mt-2 mb-2">
-                        @_.ProductName
-                    </h4>
-                    <p>
-                        @_.ProductDescription
-                    </p>
-                </div>
-                <div class="row">
-                    <div class="col pt-1" style="align-items: center">
-                        <span style="font-size:23px">@String.Format("{0:C2}", _.Price)</span>
-                    </div>
-                    <div class="col text-end">
-                        <a class="btn btn-primary" style="width:100px" asp-action="Details" asp-route-id="@_.ProductId">
-                            Details
-                        </a>
+    @try
+    {
+        foreach (var _ in Model)
+        {
+            <div class="col-4">
+                <div class="card border-1 m-2">
+                    <div class="card-body">
+                        <div>
+                            <img class="card-img-top" src="@_.ImageURL">
+                        </div>
+                        <div>
+                            <h4 class="text-primary mt-2 mb-2">
+                                @_.ProductName
+                            </h4>
+                            <p>
+                                @_.ProductDescription
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col pt-1" style="align-items: center">
+                                <span style="font-size:23px">@String.Format("{0:C2}", _.Price)</span>
+                            </div>
+                            <div class="col text-end">
+                                <a class="btn btn-primary" style="width:100px" asp-action="Details" asp-route-id="@_.ProductId">
+                                    Details
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-}
+        }
+    }
+    catch
+    {
+        <h class="text-bg-danger">Unable to load products</h>
+    }
 </div>

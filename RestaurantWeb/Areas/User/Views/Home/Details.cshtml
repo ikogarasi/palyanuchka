@@ -1,43 +1,48 @@
 ﻿@model ProductDto
 
-<div class="card container">
-    <div class="card-header row border-bottom-0" style="background-color: white">
-        <div class="col-12 col-md-6">
-            <h1 class="text-black">@Model.ProductName</h1>
+<form method="post">
+    <input asp-for="ProductId" hidden />
+    <input asp-for="CategoryName" hidden />
+    <input asp-for="ImageURL" hidden />
+    <div class="card container">
+        <div class="card-header row border-bottom-0" style="background-color: white">
+            <div class="col-12 col-md-6">
+                <h1 class="text-black">@Model.ProductName</h1>
+            </div>
+            <div class="col-12 col-md-6 text-end">
+                <h1 class="text-dark">@String.Format("{0:C2}", Model.Price)</h1>
+            </div>
         </div>
-        <div class="col-12 col-md-6 text-end">
-            <h1 class="text-dark">@String.Format("{0:C2}", Model.Price)</h1>
-        </div>
-    </div>
-    <hr />
-    <div class="card-body row">
-        <div class="col-12 col-lg-4">
-            <img src="@Model.ImageURL" style="border: 2px solid #ebebeb; width:100%"/>
-        </div>
-        <div class="col-12 col-lg-8">
-            <div class="row pl-3">
-                <div class="col-12">
-                    <span class="badge badge-primary text-success p-3 border">
-                        @Model.CategoryName
-                    </span>
-                    <p class="mt-2">
-                        @Model.ProductDescription
-                    </p>
-                    <div class="col-3">
-                        <input type="number" class="form-control" />
+        <hr />
+        <div class="card-body row">
+            <div class="col-12 col-lg-4">
+                <img src="@Model.ImageURL" style="border: 2px solid #ebebeb; width:100%"/>
+            </div>
+            <div class="col-12 col-lg-8">
+                <div class="row pl-3">
+                    <div class="col-12">
+                        <span class="badge badge-primary text-success p-3 border">
+                            @Model.CategoryName
+                        </span>
+                        <p class="mt-2">
+                            @Model.ProductDescription
+                        </p>
+                        <div class="col-3">
+                            <input type="number" asp-for="@Model.Count" class="form-control" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="card-footer row" style="background-color: white">
-        <div class="col">
-            <a class="btn btn-primary">
-                Add to cart
-            </a>
-            <a class="btn btn-secondary" asp-action="Index">
-                Return back
-            </a>
+        <div class="card-footer row" style="background-color: white">
+            <div class="col">
+                <button type="submit" class="btn btn-primary">
+                    Add to cart
+                </button>
+                <a class="btn btn-secondary" asp-action="Index">
+                    Return back
+                </a>
+            </div>
         </div>
     </div>
-</div>
+</form>
