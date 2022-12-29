@@ -34,17 +34,31 @@
                                 <i class="fa-solid fa-cart-shopping"></i>
                             </a>
                             <div class="dropdown-menu" style="width: 400px">
-                                <div class="container" id="dropdown_container">
-                                    <!--cart data here-->
-                                </div>
-                                <hr class="dropdown-divivder"/>
-                                <div class="container">
-                                    <div class="col">
-                                        <a class="btn btn-outline-primary" asp-area="User" asp-controller="Cart" asp-action="Index">
-                                            <i class="fa-solid fa-circle-info"></i>
-                                        </a>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <div class="container" id="dropdown_content">
+                                        <!--cart data here-->
                                     </div>
-                                </div>
+                                    <hr class="dropdown-divivder" id="dropdown_divider"/>
+                                    <div class="container" id="dropdown_divider">
+                                        <div class="col">
+                                            <a class="btn btn-success" id="buybtn" asp-area="User" asp-controller="Cart" asp-action="Index">
+                                                Manage
+                                            </a>
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="container" style="text-align:center">
+                                        <div class="col">
+                                            <span>Have not already authenticated? </span>
+                                            <a class="btn btn-outline-info">
+                                                Login
+                                            </a>
+                                        </div>
+                                    </div>
+                                }
                             </div>
                         </li>
                     </ul>
@@ -67,46 +81,9 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/3b4cdf30d5.js" crossorigin="anonymous"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="text/javascript">
-        $(function() {
-            $.ajax({
-                type: 'GET',
-                url: '@Url.Action("GetCartDetails", "Cart")',
-                success: function(response) {
-                    for (i = 0; i < response["data"].length; ++i) {
-                        var imageUrl = response["data"][i]["product"]["imageURL"];
-                        var productName = response["data"][i]["product"]["productName"];
-                        var count = response["data"][i]["count"];
-                        var price = response["data"][i]["product"]["price"]
-                            .toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-                        var productContent = `
-                            <div class="row">
-                                <div class="col-4">
-                                    <img src="${imageUrl}" style="width:100%" />
-                                </div>
-                                <div class="col-8">
-                                    <div class="row">
-                                        <h5 class="text-primary">${productName}</h5>            
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="text-secondary">Count: ${count}</p>
-                                        </div>
-                                        <div class="col">
-                                            <p class="text-black text-end">${price}</p>
-                                        </div>   
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                        $('#dropdown_container').append(productContent);
-                    }
-                }
-            });
-        })
-        </script>
     @await RenderSectionAsync("Scripts", required: false)
 
 </body>

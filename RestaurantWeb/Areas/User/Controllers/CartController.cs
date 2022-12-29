@@ -25,6 +25,19 @@ namespace RestaurantWeb.Areas.User.Controllers
             return View(await LoadCartDtoBasedOnLoggedInUser());
         }
 
+        [HttpPost]
+        public async Task<IActionResult> RemoveFromCart(int cartId)
+        {
+            var accessToken = await HttpContext.GetTokenAsync("access_token");
+            var userId = User.Claims.Where(u => u.Type == "sub")?.FirstOrDefault()?.Value;
+            var response = await _shoppingCartService.RemoveFromCartAsync<ResponseDto>(cartId, accessToken);
+
+            if (response == null && !response.IsSuccess)
+                ViewBag.ErrorMessage = "Cannot remove item from cart";
+
+            return RedirectToAction(nameof(Index));
+        }
+
         private async Task<CartDto> LoadCartDtoBasedOnLoggedInUser()
         {
             var accessToken = await HttpContext.GetTokenAsync("access_token");
