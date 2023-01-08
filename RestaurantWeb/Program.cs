@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Restaurant.MessageBus;
 using RestaurantWeb.Services;
 using RestaurantWeb.Services.IServices;
 
@@ -10,13 +11,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient<IProductService, ProductService>();
+builder.Services.AddHttpClient<IAzureStorageService, AzureStorageService>();
+builder.Services.AddHttpClient<IShoppingCartService, ShoppingCartService>();
+builder.Services.AddHttpClient<ICouponService, CouponService>();
 RestaurantWeb.SD.ProductAPIBase = builder.Configuration["ServiceUrls:ProductAPI"];
 RestaurantWeb.SD.AzureBlobAPIBase = builder.Configuration["ServiceUrls:AzureBlobAPI"];
 RestaurantWeb.SD.IdentityAPIBase = builder.Configuration["ServiceUrls:IdentityAPI"];
 RestaurantWeb.SD.ShoppingCartAPIBase = builder.Configuration["ServiceUrls:ShoppingCartAPI"];
+RestaurantWeb.SD.CouponAPIBase = builder.Configuration["ServiceUrls:CouponAPI"];
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IAzureStorageService, AzureStorageService>();
 builder.Services.AddScoped<IShoppingCartService, ShoppingCartService>();
+builder.Services.AddScoped<ICouponService, CouponService>();
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;

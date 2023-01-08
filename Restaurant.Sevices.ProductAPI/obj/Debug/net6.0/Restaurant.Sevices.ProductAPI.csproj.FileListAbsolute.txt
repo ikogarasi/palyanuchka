@@ -64,3 +64,12 @@ C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\obj\Debug\n
 C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\obj\Debug\net6.0\Restaurant.Sevices.ProductAPI.pdb
 C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\obj\Debug\net6.0\Restaurant.Sevices.ProductAPI.genruntimeconfig.cache
 C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\obj\Debug\net6.0\ref\Restaurant.Sevices.ProductAPI.dll
+C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\bin\Debug\net6.0\Azure.Core.Amqp.dll
+C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\bin\Debug\net6.0\Azure.Messaging.ServiceBus.dll
+C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\bin\Debug\net6.0\Microsoft.Azure.Amqp.dll
+C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\bin\Debug\net6.0\Restaurant.MessageBus.dll
+C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\bin\Debug\net6.0\Restaurant.MessageBus.pdb

@@ -2,6 +2,7 @@ using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Restaurant.MessageBus;
 using Restaurant.Services.ProductAPI;
 using Restaurant.Services.ProductAPI.DbContexts;
 using Restaurant.Services.ProductAPI.Repository;
@@ -50,6 +51,7 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
 builder.Services.AddSingleton(mapper);
+
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddAuthentication("Bearer")

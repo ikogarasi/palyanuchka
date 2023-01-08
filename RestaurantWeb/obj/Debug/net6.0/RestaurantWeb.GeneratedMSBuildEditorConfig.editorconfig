@@ -31,6 +31,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/vital/source/repos/Restaurant/RestaurantWeb/Areas/User/Views/Cart/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xDYXJ0XENoZWNrb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vital/source/repos/Restaurant/RestaurantWeb/Areas/User/Views/Cart/Confirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xDYXJ0XENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/vital/source/repos/Restaurant/RestaurantWeb/Areas/User/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xDYXJ0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

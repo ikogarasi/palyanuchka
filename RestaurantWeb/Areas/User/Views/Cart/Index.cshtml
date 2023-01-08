@@ -61,12 +61,22 @@
                 }
                 <div class="row">
                     <div class="col-6">
-                        <span>Coupon:</span>
-                        <input />
-                        <button type="submit" class="btn-success"> Apply </button>
+                        @if (string.IsNullOrEmpty(Model.CartHeader.CouponCode))
+                        {
+                            <span>Coupon:</span>
+                            <input asp-for="CartHeader.CouponCode" />
+                            <button type="submit" asp-action="ApplyCoupon" class="btn btn-success"> Apply </button>
+                        }
+                        else
+                        {
+                            <span>Coupon:</span>
+                            <input asp-for="CartHeader.CouponCode" disabled/>
+                            <button type="submit" asp-action="RemoveCoupon" class="btn btn-danger"> Remove </button> 
+                            <span class="text-danger">(@String.Format("{0:C}", Model.CartHeader.DiscountTotal) discount)</span>
+                        }
                     </div>
                     <div class="col-6 text-end">
-                        <span class="text-danger" style="font-size:21px;">  Order Total : @Model.CartHeader.OrderTotal <br /></span>
+                        <span class="text-danger" style="font-size:21px;">  Order Total : @String.Format("{0:C2}", Model.CartHeader.OrderTotal) <br /></span>
                     </div>
                 </div>
             </div>
@@ -74,7 +84,7 @@
                 <div class="col-6 col-md-3 offset-md-6">
                 </div>
                 <div class="col-6 col-md-3">
-                    <a class="btn btn-success form-control ">
+                    <a class="btn btn-success form-control" asp-action="Checkout">
                         <span>Checkout</span>
                     </a>
                 </div>

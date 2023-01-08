@@ -53,5 +53,39 @@ namespace RestaurantWeb.Services
                 AccessToken = accessToken
             });
         }
+
+        public async Task<T> ApplyCoupon<T>(CartDto cartDto, string token = null)
+        {
+            return await this.SendAsync<T>(new ApiRequest()
+            {
+                ApiType = SD.ApiType.POST,
+                Data = cartDto,
+                Url = SD.ShoppingCartAPIBase + "/api/carts/ApplyCoupon",
+                AccessToken = token
+            });
+        }
+
+        public async Task<T> RemoveCoupon<T>(string userId, string token = null)
+        {
+            return await this.SendAsync<T>(new ApiRequest()
+            {
+                ApiType = SD.ApiType.POST,
+                Data = userId,
+                Url = SD.ShoppingCartAPIBase + "/api/carts/RemoveCoupon",
+                AccessToken = token
+            });
+        }
+
+        public async Task<T> Checkout<T>(CartHeaderDto cartHeader, string token = null)
+        {
+            return await this.SendAsync<T>(new ApiRequest()
+            {
+                ApiType = SD.ApiType.POST,
+                Data = cartHeader,
+                Url = SD.ShoppingCartAPIBase + "/api/carts/Checkout",
+                AccessToken = token
+            });
+
+        }
     }
 }

@@ -2,6 +2,52 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Azure.Core/1.25.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
+          "System.Diagnostics.DiagnosticSource": "4.6.0",
+          "System.Memory.Data": "1.0.2",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Text.Encodings.Web": "4.7.2",
+          "System.Text.Json": "4.7.2",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/net5.0/Azure.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Azure.Core.dll": {}
+        }
+      },
+      "Azure.Core.Amqp/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Azure.Core.Amqp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Core.Amqp.dll": {}
+        }
+      },
+      "Azure.Messaging.ServiceBus/7.11.1": {
+        "type": "package",
+        "dependencies": {
+          "Azure.Core": "1.25.0",
+          "Azure.Core.Amqp": "1.2.0",
+          "Microsoft.Azure.Amqp": "2.5.12",
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
+          "System.Memory.Data": "1.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Azure.Messaging.ServiceBus.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Azure.Messaging.ServiceBus.dll": {}
+        }
+      },
       "Humanizer.Core/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -66,6 +112,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {}
+        }
+      },
+      "Microsoft.Azure.Amqp/2.5.12": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Azure.Amqp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Azure.Amqp.dll": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
@@ -1739,17 +1794,10 @@
           "ref/netstandard1.3/System.Diagnostics.Debug.dll": {}
         }
       },
-      "System.Diagnostics.DiagnosticSource/4.3.0": {
+      "System.Diagnostics.DiagnosticSource/4.6.0": {
         "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Tracing": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
         "compile": {
-          "lib/netstandard1.3/_._": {}
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
@@ -2027,6 +2075,19 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "System.Memory.Data/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Encodings.Web": "4.7.2",
+          "System.Text.Json": "4.6.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.Data.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.Data.dll": {}
+        }
+      },
       "System.Net.Http/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2095,6 +2156,15 @@
         },
         "compile": {
           "ref/netstandard1.3/System.Net.Sockets.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.ObjectModel/4.3.0": {
@@ -2665,6 +2735,15 @@
           "ref/netstandard1.3/System.Text.Encoding.Extensions.dll": {}
         }
       },
+      "System.Text.Encodings.Web/4.7.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.Text.Encodings.Web.dll": {}
+        }
+      },
       "System.Text.Json/5.0.2": {
         "type": "package",
         "compile": {
@@ -2805,10 +2884,78 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "Restaurant.MessageBus/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Azure.Messaging.ServiceBus": "7.11.1",
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Restaurant.MessageBus.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Restaurant.MessageBus.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Azure.Core/1.25.0": {
+      "sha512": "X8Dd4sAggS84KScWIjEbFAdt2U1KDolQopTPoHVubG2y3CM54f9l6asVrP5Uy384NWXjsspPYaJgz5xHc+KvTA==",
+      "type": "package",
+      "path": "azure.core/1.25.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.core.1.25.0.nupkg.sha512",
+        "azure.core.nuspec",
+        "azureicon.png",
+        "lib/net461/Azure.Core.dll",
+        "lib/net461/Azure.Core.xml",
+        "lib/net5.0/Azure.Core.dll",
+        "lib/net5.0/Azure.Core.xml",
+        "lib/netcoreapp2.1/Azure.Core.dll",
+        "lib/netcoreapp2.1/Azure.Core.xml",
+        "lib/netstandard2.0/Azure.Core.dll",
+        "lib/netstandard2.0/Azure.Core.xml"
+      ]
+    },
+    "Azure.Core.Amqp/1.2.0": {
+      "sha512": "vrF4isvhwdZspzorLwYhukXz3DA8/ONSnZUIBAqBtOCzsDNUgAsuILbCzvtDrn2oDxyq7DZx5Nh81pe0BeWmDQ==",
+      "type": "package",
+      "path": "azure.core.amqp/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.core.amqp.1.2.0.nupkg.sha512",
+        "azure.core.amqp.nuspec",
+        "lib/netstandard2.0/Azure.Core.Amqp.dll",
+        "lib/netstandard2.0/Azure.Core.Amqp.xml",
+        "pkgicon.png"
+      ]
+    },
+    "Azure.Messaging.ServiceBus/7.11.1": {
+      "sha512": "ioGedXeH8KK4HdTDEyOzdgNbEXGstGItVljI1EKYsz08sgwej6LpODCZmwPR2ui1fjXBWt8Zea0RJT4d9LwlMg==",
+      "type": "package",
+      "path": "azure.messaging.servicebus/7.11.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "README.md",
+        "azure.messaging.servicebus.7.11.1.nupkg.sha512",
+        "azure.messaging.servicebus.nuspec",
+        "azureicon.png",
+        "lib/netstandard2.0/Azure.Messaging.ServiceBus.dll",
+        "lib/netstandard2.0/Azure.Messaging.ServiceBus.xml"
+      ]
+    },
     "Humanizer.Core/2.2.0": {
       "sha512": "rsYXB7+iUPP8AHgQ8JP2UZI2xK2KhjcdGr9E6zX3CsZaTLCaw8M35vaAJRo1rfxeaZEVMuXeaquLVCkZ7JcZ5Q==",
       "type": "package",
@@ -2894,6 +3041,25 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll",
         "microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
         "microsoft.aspnetcore.razor.language.nuspec"
+      ]
+    },
+    "Microsoft.Azure.Amqp/2.5.12": {
+      "sha512": "0SlEl+TSQdpjXWf9/37dXWAa0zk6R1EJKmGtGZeKUAH7WEQpJOWMxJ9I43igcBCnTkFwa28CdPnpSCjFZVQlkw==",
+      "type": "package",
+      "path": "microsoft.azure.amqp/2.5.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "lib/monoandroid/Microsoft.Azure.Amqp.dll",
+        "lib/net45/Microsoft.Azure.Amqp.dll",
+        "lib/netstandard1.3/Microsoft.Azure.Amqp.dll",
+        "lib/netstandard2.0/Microsoft.Azure.Amqp.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Microsoft.Azure.Amqp.dll",
+        "lib/uap10.0/Microsoft.Azure.Amqp.dll",
+        "lib/uap10.0/Microsoft.Azure.Amqp.pri",
+        "microsoft.azure.amqp.2.5.12.nupkg.sha512",
+        "microsoft.azure.amqp.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/5.0.0": {
@@ -5485,15 +5651,17 @@
         "system.diagnostics.debug.nuspec"
       ]
     },
-    "System.Diagnostics.DiagnosticSource/4.3.0": {
-      "sha512": "tD6kosZnTAGdrEa0tZSuFyunMbt/5KYDnHdndJYGqZoNy00XVXyACd5d6KnE1YgYv3ne2CjtAfNXo/fwEhnKUA==",
+    "System.Diagnostics.DiagnosticSource/4.6.0": {
+      "sha512": "mbBgoR0rRfl2uimsZ2avZY8g7Xnh1Mza0rJZLPcxqiMWlkGukjmRkuMJ/er+AhQuiRIh80CR/Hpeztr80seV5g==",
       "type": "package",
-      "path": "system.diagnostics.diagnosticsource/4.3.0",
+      "path": "system.diagnostics.diagnosticsource/4.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net45/System.Diagnostics.DiagnosticSource.xml",
         "lib/net46/System.Diagnostics.DiagnosticSource.dll",
         "lib/net46/System.Diagnostics.DiagnosticSource.xml",
         "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.dll",
@@ -5502,8 +5670,10 @@
         "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.xml",
         "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.dll",
         "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.xml",
-        "system.diagnostics.diagnosticsource.4.3.0.nupkg.sha512",
-        "system.diagnostics.diagnosticsource.nuspec"
+        "system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Diagnostics.Tools/4.3.0": {
@@ -6351,6 +6521,24 @@
         "version.txt"
       ]
     },
+    "System.Memory.Data/1.0.2": {
+      "sha512": "JGkzeqgBsiZwKJZ1IxPNsDFZDhUvuEdX8L8BDC8N3KOj+6zMcNU28CNN59TpZE/VJYy9cP+5M+sbxtWJx3/xtw==",
+      "type": "package",
+      "path": "system.memory.data/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "DotNetPackageIcon.png",
+        "README.md",
+        "lib/net461/System.Memory.Data.dll",
+        "lib/net461/System.Memory.Data.xml",
+        "lib/netstandard2.0/System.Memory.Data.dll",
+        "lib/netstandard2.0/System.Memory.Data.xml",
+        "system.memory.data.1.0.2.nupkg.sha512",
+        "system.memory.data.nuspec"
+      ]
+    },
     "System.Net.Http/4.3.0": {
       "sha512": "sYg+FtILtRQuYWSIAuNOELwVuVsxVyJGWQyOnlAzhV4xvhyFnON1bAzYYC+jjRW8JREM45R0R5Dgi8MTC5sEwA==",
       "type": "package",
@@ -6548,6 +6736,53 @@
         "ref/xamarinwatchos10/_._",
         "system.net.sockets.4.3.0.nupkg.sha512",
         "system.net.sockets.nuspec"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.ObjectModel/4.3.0": {
@@ -8198,6 +8433,30 @@
         "system.text.encoding.extensions.nuspec"
       ]
     },
+    "System.Text.Encodings.Web/4.7.2": {
+      "sha512": "iTUgB/WtrZ1sWZs84F2hwyQhiRH6QNjQv2DkwrH+WP6RoFga2Q1m3f9/Q7FG8cck8AdHitQkmkXSY8qylcDmuA==",
+      "type": "package",
+      "path": "system.text.encodings.web/4.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Encodings.Web.dll",
+        "lib/net461/System.Text.Encodings.Web.xml",
+        "lib/netstandard1.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard1.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.1/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.1/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.4.7.2.nupkg.sha512",
+        "system.text.encodings.web.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Text.Json/5.0.2": {
       "sha512": "I47dVIGiV6SfAyppphxqupertT/5oZkYLDCX6vC3HpOI4ZLjyoKAreUoem2ie6G0RbRuFrlqz/PcTQjfb2DOfQ==",
       "type": "package",
@@ -8722,13 +8981,19 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Restaurant.MessageBus/1.0.0": {
+      "type": "project",
+      "path": "../Restaurant.MessageBus/Restaurant.MessageBus.csproj",
+      "msbuildProject": "../Restaurant.MessageBus/Restaurant.MessageBus.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 6.0.12",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.10",
-      "Newtonsoft.Json >= 13.0.2"
+      "Newtonsoft.Json >= 13.0.2",
+      "Restaurant.MessageBus >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8757,7 +9022,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\vital\\source\\repos\\Restaurant\\Restaurant.MessageBus\\Restaurant.MessageBus.csproj": {
+              "projectPath": "C:\\Users\\vital\\source\\repos\\Restaurant\\Restaurant.MessageBus\\Restaurant.MessageBus.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

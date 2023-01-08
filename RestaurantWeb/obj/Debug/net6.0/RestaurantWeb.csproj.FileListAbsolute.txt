@@ -246,3 +246,10 @@ C:\Users\vital\source\repos\Restaurant\RestaurantWeb\obj\Debug\net6.0\refint\Res
 C:\Users\vital\source\repos\Restaurant\RestaurantWeb\obj\Debug\net6.0\RestaurantWeb.pdb
 C:\Users\vital\source\repos\Restaurant\RestaurantWeb\obj\Debug\net6.0\RestaurantWeb.genruntimeconfig.cache
 C:\Users\vital\source\repos\Restaurant\RestaurantWeb\obj\Debug\net6.0\ref\RestaurantWeb.dll
+C:\Users\vital\source\repos\Restaurant\RestaurantWeb\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\vital\source\repos\Restaurant\RestaurantWeb\bin\Debug\net6.0\Azure.Core.Amqp.dll
+C:\Users\vital\source\repos\Restaurant\RestaurantWeb\bin\Debug\net6.0\Azure.Messaging.ServiceBus.dll
+C:\Users\vital\source\repos\Restaurant\RestaurantWeb\bin\Debug\net6.0\Microsoft.Azure.Amqp.dll
+C:\Users\vital\source\repos\Restaurant\RestaurantWeb\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\vital\source\repos\Restaurant\RestaurantWeb\bin\Debug\net6.0\Restaurant.MessageBus.dll
+C:\Users\vital\source\repos\Restaurant\RestaurantWeb\bin\Debug\net6.0\Restaurant.MessageBus.pdb

@@ -18,6 +18,15 @@ namespace Restaurant.Services.ShoppingCartAPI.Repository
             _mapper = mapper;
         }
 
+        public async Task<bool> ApplyCoupon(string userId, string code)
+        {
+            var cart = await _db.CartHeaders.FirstOrDefaultAsync(i => i.UserId == userId);
+            cart.CouponCode = code;
+            _db.CartHeaders.Update(cart);
+            await _db.SaveChangesAsync();
+            return true;
+        }
+
         public async Task<bool> ClearCart(string userId)
         {
             var cartHeaderFromDb = await _db.CartHeaders.FirstOrDefaultAsync(x => x.UserId == userId);
@@ -95,6 +104,15 @@ namespace Restaurant.Services.ShoppingCartAPI.Repository
                 .Where(i => i.CartHeaderId == cart.CartHeader.CartHeaderId).Include(i => i.Product);
 
             return _mapper.Map<CartDto>(cart);
+        }
+
+        public async Task<bool> RemoveCoupon(string userId)
+        {
+            var cart = await _db.CartHeaders.FirstOrDefaultAsync(i => i.UserId == userId);
+            cart.CouponCode = "";
+            _db.CartHeaders.Update(cart);
+            await _db.SaveChangesAsync();
+            return true;
         }
 
         public async Task<bool> RemoveFromCart(int cartDetailsId)

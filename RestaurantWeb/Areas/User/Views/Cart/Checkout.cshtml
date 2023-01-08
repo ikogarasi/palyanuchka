@@ -1,0 +1,108 @@
+﻿@model CartDto
+
+<div class="container">
+<form method="POST">
+    <input asp-for="CartHeader.UserId" hidden />
+    <input asp-for="CartHeader.CartHeaderId" hidden />
+    <input asp-for="CartHeader.CouponCode" hidden />
+    <input asp-for="CartHeader.DiscountTotal" hidden />
+    <input asp-for="CartHeader.OrderTotal" hidden />
+    <h3 class="text-warning">
+        Enter details and place order:
+    </h3>
+    <div class="row justify-content-around">
+        <div class="col-6">
+            <div class="border p-3 row">
+                <div class="col-6 mb-2">
+                    <label class="text-black" asp-for="CartHeader.FirstName">First Name:</label>
+                    <input class="form-control" type="text" asp-for="CartHeader.FirstName" />
+                </div>
+                <div class="col-6 mb-2">
+                    <label class="text-black" asp-for="CartHeader.LastName">Last Name:</label>
+                    <input class="form-control" type="text" asp-for="CartHeader.LastName" />
+                </div>
+                <div class="mb-2">
+                    <label class="text-black" asp-for="CartHeader.Email">Email:</label>
+                    <input class="form-control" type="text" asp-for="CartHeader.Email" />
+                </div>
+                <div class="mb-2">
+                    <label class="text-black" asp-for="CartHeader.Phone">Phone:</label>
+                    <input class="form-control" type="text" asp-for="CartHeader.Phone" />
+                </div>
+                <div class="mb-2">
+                    <label class="text-black" asp-for="CartHeader.PickupDate">Pick-up time:</label>
+                    <input class="form-control" asp-for="CartHeader.PickupDate" />
+                </div>
+                <div class="mb-2">
+                    <label class="text-black" asp-for="CartHeader.CardNumber">Card number:</label>
+                    <input class="form-control" type="text" asp-for="CartHeader.CardNumber" />
+                </div>
+                <div class="col-6 mb-2">
+                    <label class="text-black" asp-for="CartHeader.CVV">CVV:</label>
+                    <input class="form-control" type="text" asp-for="CartHeader.CVV" />
+                </div>
+                <div class="col-6 mb-2">
+                    <label class="text-black" asp-for="CartHeader.ExpiryMonthYear">Expiry:</label>
+                    <input class="form-control" type="text" placeholder="MM/YY" asp-for="CartHeader.ExpiryMonthYear" />
+                </div>
+            </div>
+        </div>
+        <div class="col-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-none d-lg-block">
+                        <div class="row text-danger">
+                            <div class="col-6">
+                                Product name
+                            </div>
+                            <div class="col-3">
+                                Price
+                            </div>
+                            <div class="col-3">
+                                Count
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    @foreach(CartDetailsDto item in Model.CartDetails)
+                    {
+                        <div class="row h-100">
+                            <div class="col-6">
+                                @item.Product.ProductName
+                            </div>
+                            <div class="col-3">
+                                @(item.Product.Price)$
+                            </div>
+                            <div class="col-3">
+                                @item.Count
+                            </div>
+                        </div>
+                    }
+                    <hr />
+                    <div class="row">
+                        <div class="col pr-4">
+                            <div class="text-danger">
+                                Order Total : 
+                                @string.Format("{0:C}", Model.CartHeader.OrderTotal)
+                            </div>
+                            <div class="text-success">
+                                Discount Total : 
+                                @string.Format("{0:C}", Model.CartHeader.DiscountTotal)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-success w-100">
+                                Place order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</div>

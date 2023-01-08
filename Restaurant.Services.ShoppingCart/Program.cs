@@ -2,6 +2,7 @@ using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Restaurant.MessageBus;
 using Restaurant.Services.ShoppingCartAPI;
 using Restaurant.Services.ShoppingCartAPI.DbContexts;
 using Restaurant.Services.ShoppingCartAPI.Repository;
@@ -50,6 +51,8 @@ builder.Services.AddSwaggerGen(_ =>
 
 IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
 builder.Services.AddSingleton(mapper);
+builder.Services.AddSingleton<IMessageBus, AzureServiceMessageBus>();
+
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddAuthentication("Bearer")
