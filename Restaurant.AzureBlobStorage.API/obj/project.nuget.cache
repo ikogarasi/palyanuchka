@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bHTmQFayla6IdU7CZUR36yNd3wT7rmmMoFuuL9uuZXSDyBuJ93HfBAMxYVQ57UmiSNjSPwKn6EMELoAfDX+g9Q==",
+  "dgSpecHash": "042qmf56bxMOTRv8gkeLEuIAfchjJ08TrJh+WwT+VLSadQn958bQM5NWtEBzPDLShjY8oiPorXoU5jIlG+1CRQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\vital\\source\\repos\\Restaurant\\Restaurant.AzureBlobStorage.API\\Restaurant.Services.AzureBlobStorageAPI.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,11 @@
     "C:\\Users\\vital\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "C:\\Users\\vital\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
     "C:\\Users\\vital\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\vital\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "C:\\Users\\vital\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\vital\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.19\\microsoft.windowsdesktop.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\vital\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.19\\microsoft.netcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\vital\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.19\\microsoft.aspnetcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\vital\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.19\\microsoft.netcore.app.host.win-x64.6.0.19.nupkg.sha512"
   ],
   "logs": []
 }

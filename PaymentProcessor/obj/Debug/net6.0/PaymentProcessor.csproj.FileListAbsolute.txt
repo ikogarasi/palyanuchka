@@ -1,0 +1,12 @@
+C:\Users\vital\source\repos\Restaurant\PaymentProcessor\bin\Debug\net6.0\PaymentProcessor.deps.json
+C:\Users\vital\source\repos\Restaurant\PaymentProcessor\bin\Debug\net6.0\PaymentProcessor.dll
+C:\Users\vital\source\repos\Restaurant\PaymentProcessor\bin\Debug\net6.0\PaymentProcessor.pdb
+C:\Users\vital\source\repos\Restaurant\PaymentProcessor\obj\Debug\net6.0\PaymentProcessor.csproj.AssemblyReference.cache
+C:\Users\vital\source\repos\Restaurant\PaymentProcessor\obj\Debug\net6.0\PaymentProcessor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vital\source\repos\Restaurant\PaymentProcessor\obj\Debug\net6.0\PaymentProcessor.AssemblyInfoInputs.cache
+C:\Users\vital\source\repos\Restaurant\PaymentProcessor\obj\Debug\net6.0\PaymentProcessor.AssemblyInfo.cs
+C:\Users\vital\source\repos\Restaurant\PaymentProcessor\obj\Debug\net6.0\PaymentProcessor.csproj.CoreCompileInputs.cache
+C:\Users\vital\source\repos\Restaurant\PaymentProcessor\obj\Debug\net6.0\PaymentProcessor.dll
+C:\Users\vital\source\repos\Restaurant\PaymentProcessor\obj\Debug\net6.0\refint\PaymentProcessor.dll
+C:\Users\vital\source\repos\Restaurant\PaymentProcessor\obj\Debug\net6.0\PaymentProcessor.pdb
+C:\Users\vital\source\repos\Restaurant\PaymentProcessor\obj\Debug\net6.0\ref\PaymentProcessor.dll

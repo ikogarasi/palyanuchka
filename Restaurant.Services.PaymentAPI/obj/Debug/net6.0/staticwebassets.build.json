@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "62oFOSfh+xY8m31mWiaeuClRSUVGXgdCvtTq++tbtQk=",
+  "Source": "Restaurant.Services.PaymentAPI",
+  "BasePath": "_content/Restaurant.Services.PaymentAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

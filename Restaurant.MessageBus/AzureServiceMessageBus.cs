@@ -10,14 +10,16 @@ namespace Restaurant.MessageBus
 
         public async Task PublishMessage(BaseMessage message, string topicName)
         {
-            await using ServiceBusClient client = new ServiceBusClient(connectionString);
+            await using var client = new ServiceBusClient(connectionString);
             ServiceBusSender sender = client.CreateSender(topicName);
             string jsonMessage = JsonConvert.SerializeObject(message);
-            ServiceBusMessage msg = new ServiceBusMessage(Encoding.UTF8.GetBytes(jsonMessage))
+            var msg = new ServiceBusMessage(Encoding.UTF8.GetBytes(jsonMessage))
             {
                 CorrelationId = Guid.NewGuid().ToString()
             };
             await sender.SendMessageAsync(msg);
+
+            await client.DisposeAsync();
         }
     }
 }

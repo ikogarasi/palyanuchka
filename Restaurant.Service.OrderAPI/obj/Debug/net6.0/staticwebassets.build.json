@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "os/aV1inuNSO+cjT2YmXglfL9SO4qMVXCXWJr57tMCM=",
+  "Source": "Restaurant.Service.OrderAPI",
+  "BasePath": "_content/Restaurant.Service.OrderAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\vital\\source\\repos\\Restaurant\\Restaurant.Services.ShoppingCart\\Restaurant.Services.ShoppingCartAPI.csproj",
+      "Version": 2,
+      "Source": "Restaurant.Services.ShoppingCartAPI",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

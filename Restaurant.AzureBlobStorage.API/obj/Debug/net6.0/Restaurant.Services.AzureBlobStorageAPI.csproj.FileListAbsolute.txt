@@ -39,3 +39,8 @@ C:\Users\vital\source\repos\Restaurant\Restaurant.AzureBlobStorage.API\bin\Debug
 C:\Users\vital\source\repos\Restaurant\Restaurant.AzureBlobStorage.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\vital\source\repos\Restaurant\Restaurant.AzureBlobStorage.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\Users\vital\source\repos\Restaurant\Restaurant.AzureBlobStorage.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\vital\source\repos\Restaurant\Restaurant.AzureBlobStorage.API\obj\Debug\net6.0\staticwebassets\msbuild.Restaurant.Services.AzureBlobStorageAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\vital\source\repos\Restaurant\Restaurant.AzureBlobStorage.API\obj\Debug\net6.0\staticwebassets\msbuild.build.Restaurant.Services.AzureBlobStorageAPI.props
+C:\Users\vital\source\repos\Restaurant\Restaurant.AzureBlobStorage.API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Restaurant.Services.AzureBlobStorageAPI.props
+C:\Users\vital\source\repos\Restaurant\Restaurant.AzureBlobStorage.API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Restaurant.Services.AzureBlobStorageAPI.props
+C:\Users\vital\source\repos\Restaurant\Restaurant.AzureBlobStorage.API\obj\Debug\net6.0\staticwebassets.pack.json

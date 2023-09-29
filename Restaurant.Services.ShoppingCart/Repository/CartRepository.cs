@@ -89,7 +89,7 @@ namespace Restaurant.Services.ShoppingCartAPI.Repository
                 }
             }
 
-            return _mapper.Map<CartDto>(cartDto);
+            return _mapper.Map<CartDto>(cart);
         }
 
         public async Task<CartDto> GetCartByUserId(string userId)

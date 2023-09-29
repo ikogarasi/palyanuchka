@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ig9eIOJfNvhoFgwzEdZTC9uddpFZ+wfFJBRzi56aDDlIi1FhX62mUtleHrMb1o2mZb766y1XZTatFGC1itgecQ==",
+  "dgSpecHash": "MqGDWTMhTz3Lqw5roIFEBnST2rBi+7gXCoEh80uzzzqzb3W6a7WpuwqRtIfIvsix0B+jW+FrHblLlx8dRt3rOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\vital\\source\\repos\\Restaurant\\Restaurant.Services.Identity\\Restaurant.Services.Identity.csproj",
   "expectedPackageFiles": [
@@ -60,7 +60,11 @@
     "C:\\Users\\vital\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\vital\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\vital\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
-    "C:\\Users\\vital\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\vital\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\vital\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.19\\microsoft.windowsdesktop.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\vital\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.19\\microsoft.netcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\vital\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.19\\microsoft.aspnetcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\vital\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.19\\microsoft.netcore.app.host.win-x64.6.0.19.nupkg.sha512"
   ],
   "logs": []
 }

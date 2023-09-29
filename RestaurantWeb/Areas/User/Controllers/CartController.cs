@@ -78,6 +78,13 @@ namespace RestaurantWeb.Areas.User.Controllers
             {
                 string accessToken = await HttpContext.GetTokenAsync("access_token");
                 ResponseDto response = await _shoppingCartService.Checkout<ResponseDto>(cart.CartHeader, accessToken);
+                
+                if (!response.IsSuccess)
+                {
+                    TempData["Error"] = response.DisplayMessage;
+                    return RedirectToAction(nameof(Checkout));
+                }
+                
                 return RedirectToAction(nameof(Confirmation));
             }
             catch(Exception ex)

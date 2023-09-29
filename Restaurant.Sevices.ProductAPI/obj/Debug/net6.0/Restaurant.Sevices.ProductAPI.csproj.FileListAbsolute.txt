@@ -73,3 +73,8 @@ C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\bin\Debug\n
 C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\bin\Debug\net6.0\System.Memory.Data.dll
 C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\bin\Debug\net6.0\Restaurant.MessageBus.dll
 C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\bin\Debug\net6.0\Restaurant.MessageBus.pdb
+C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\obj\Debug\net6.0\staticwebassets\msbuild.Restaurant.Sevices.ProductAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.Restaurant.Sevices.ProductAPI.props
+C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Restaurant.Sevices.ProductAPI.props
+C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Restaurant.Sevices.ProductAPI.props
+C:\Users\vital\source\repos\Restaurant\Restaurant.Sevices.ProductAPI\obj\Debug\net6.0\staticwebassets.pack.json

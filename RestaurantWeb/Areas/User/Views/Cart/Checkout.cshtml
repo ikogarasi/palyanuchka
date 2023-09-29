@@ -1,5 +1,10 @@
 ﻿@model CartDto
 
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-warning" role="alert">@TempData["Error"]</div>    
+}
+
 <div class="container">
 <form method="POST">
     <input asp-for="CartHeader.UserId" hidden />

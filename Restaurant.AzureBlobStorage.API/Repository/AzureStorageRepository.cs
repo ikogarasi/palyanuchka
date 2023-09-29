@@ -48,7 +48,6 @@ namespace Restaurant.Services.AzureBlobStorageAPI.Repository
                 when (ex.ErrorCode == BlobErrorCode.BlobAlreadyExists)
             {
                 response.DisplayMessage = $"File with name {file.FileName} already exists in container";
-                //_logger.LogError(response.DisplayMessage);
                 response.IsSuccess = false;
                 return response;
             }
